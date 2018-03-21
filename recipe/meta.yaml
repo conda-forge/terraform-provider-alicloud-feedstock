@@ -1,10 +1,10 @@
 {% set provider= "alicloud" %}
-{% set version = "1.8.1" %}
+{% set version = "1.9.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "51fd76e7cc8e7316314d753fa48173ab9efdeab45d63f84901db542db97e97d4" %}
+{% set sha256 = "643c3fefc20938f7d4c75afb56b15e511efa9d85ebd15aebe9f8c801da131dad" %}
 {% set sha256_win32 = "575a4310ad24b91dd3fd60e1f267be6940c53c07a2c6459b4c1d44d898716a69" %}
 {% set sha256_win64 = "701e26eca17547a8c99c9c6ea38b9eb94ba66b8798af2ee74da53602af593990" %}
 
