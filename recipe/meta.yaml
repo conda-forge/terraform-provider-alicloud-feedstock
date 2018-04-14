@@ -5,8 +5,8 @@
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
 {% set sha256 = "69b87c4da2efdad5d273d692a688698c79cc4040a2b8721c7b0e0a05ba363b1c" %}
-{% set sha256_win32 = "3cd55a88a9782918d9784a7d2512ff357706e8cdd610017ee5e3d47e5fdbae11" %}
-{% set sha256_win64 = "5311568dd5bd03fa00180ebb7e0244673cdf59d0c8b032019f1c8011173004e3" %}
+{% set sha256_win32 = "2db8e8c642ea6a1184e1c4ca90d79a88dde7023e690b37b521472d599e63666f" %}
+{% set sha256_win64 = "2c84642a276fd13a9e04b87f1bf0a8d744f435b320daac4bc7d8f3cb1639b336" %}
 
 
 package:
@@ -47,7 +47,7 @@ about:
   license: MPL 2.0
   summary: The Terraform AliCloud provider
   doc_url: https://www.terraform.io/docs/providers/{{ provider }}/index.html
-  dev_url: https://https://github.com/terraform-providers/{{ name }}
+  dev_url: https://github.com/terraform-providers/{{ name }}
 
 extra:
   recipe-maintainers:
