@@ -1,4 +1,4 @@
-{% set provider= "alicloud" %}
+{% set provider = "alicloud" %}
 {% set version = "1.9.2" %}
 
 {% set name = "terraform-provider-" + provider %}
