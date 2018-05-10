@@ -5,8 +5,7 @@
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
 {% set sha256 = "b17179f81f7349f6bf3fbffa6a6c8fa25f0e300aaa5038ba4df886b99e9fddc2" %}
-{% set sha256_win32 = "2db8e8c642ea6a1184e1c4ca90d79a88dde7023e690b37b521472d599e63666f" %}
-{% set sha256_win64 = "2c84642a276fd13a9e04b87f1bf0a8d744f435b320daac4bc7d8f3cb1639b336" %}
+{% set sha256_win64 = "71b2ea4b55c2facdc6136f5dbecbbf4024b0262628358c9a0c27b52f67f19e7a" %}
 
 
 package:
@@ -18,10 +17,8 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz  # [not win]
   sha256: {{ sha256 }}  # [not win]
 
-  url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_386.zip  # [win32]
   url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
   fn: {{ name }}-{{ version }}.zip  # [win]
-  sha256: {{ sha256_win32 }}  # [win32]
   sha256: {{ sha256_win64 }}  # [win64]
 
 build:
