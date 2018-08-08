@@ -1,5 +1,5 @@
 {% set provider = "alicloud" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
@@ -11,10 +11,10 @@ package:
 source:
   - folder: src/github.com/terraform-providers/{{ name|lower }}
     url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
-    sha256: 17be25078f9dfe762a9b73adea1600a8a4387094f922e5958e3eb38a1d89054b  # [not win]
+    sha256: 8e2d06603289aaeddb0a8edfc96123919f8a56b060ce95b8afa74e4d40cad532  # [not win]
 
     url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
-    sha256: 498c83e541181ea6900eb52acf9921198a885658abf0026c555f479e42e8133f  # [win64]
+    sha256: 2181a20211c92a1fb95816184db3a0c12f09edcd8d2a5535b8f081f92ca1418b  # [win64]
 
 build:
   number: 0
