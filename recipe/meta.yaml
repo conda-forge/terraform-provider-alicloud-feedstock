@@ -1,6 +1,6 @@
 {% set provider = "alicloud" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "1.80.0" %}
+{% set version = "1.80.1" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 3aeaa1de18ed291169f3f055b81d1e13ed936205313ea15d0d27e609c0eba5b1
+  sha256: 2bb779432cf79fb37d676c1528a2eb0d85f6b3df6e336a63e938f564ce110a72
 
 build:
   number: 0
