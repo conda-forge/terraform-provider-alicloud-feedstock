@@ -15,7 +15,7 @@ source:
   sha256: e38c650b9bc6d5ef5f9c6b9151e92cb2716b3961a4f7280d4a9a3e2f2485ad84
 
 build:
-  number: 0
+  number: 1
   script:
     - go build -v -o {{ target_gobin }}{{ x4_plugin }}{{ target_goexe }}
 
@@ -51,4 +51,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - conda-forge/terraform
